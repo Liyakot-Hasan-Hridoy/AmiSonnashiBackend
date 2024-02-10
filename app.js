@@ -318,7 +318,7 @@ app.use('/images', express.static('chapter46/images'));
 app.use('/audio', express.static('chapter46/audio'));
 
 
-app.use('/images', express.static('chapter47/images'));
+app.use('/images', express.static('myTalk/images'));
 
 
 app.get("/api/chapter1", (req, res) => {
@@ -2710,7 +2710,7 @@ app.get("/api/myTalk", (req, res) => {
             return `${req.protocol}://${req.get('host')}/images/${file}`;
         });
 
-        res.json({ AllBooksImages: imageUrls });
+        res.json({ myTalk: imageUrls });
     });
 });
 
